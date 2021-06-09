@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientInfoController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="51.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="labelinfo" text="Name" />
+            <Label fx:id="clientName" styleClass="labelinfo" text="Label" wrapText="true" GridPane.columnIndex="1" />
+            <Label styleClass="labelinfo" text="Surname" GridPane.rowIndex="1" />
+            <Label fx:id="clientSurname" styleClass="labelinfo" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label styleClass="labelinfo" text="Company" GridPane.rowIndex="2" />
+            <Label fx:id="clientCompany" styleClass="labelinfo" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="labelinfo" text="Nip" GridPane.rowIndex="3" />
+            <Label fx:id="clientNip" styleClass="labelinfo" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label styleClass="labelinfo" text="email" GridPane.rowIndex="4" />
+            <Label fx:id="clientEmail" styleClass="labelinfo" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <TableView fx:id="orderTableView" layoutX="257.0" layoutY="45.0" prefHeight="161.0" prefWidth="230.0">
+         <columns>
+            <TableColumn fx:id="orderTableColumn" prefWidth="115.0" text="Order" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="115.0" text="Status" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#statusOrderAction" text="Status" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteOrderAction" text="Delete" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <Button fx:id="cancelButton" layoutX="213.0" layoutY="262.0" mnemonicParsing="false" onAction="#cancelAction" prefWidth="75.0" text="Cancel" />
+   </children>
+</Pane>

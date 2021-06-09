@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProductModyfiController">
+   <children>
+      <Button fx:id="modyfiButton" layoutX="397.0" layoutY="270.0" mnemonicParsing="false" onAction="#modifyAction" prefWidth="65.0" text="Modify" />
+      <Button fx:id="closeButton" layoutX="306.0" layoutY="270.0" mnemonicParsing="false" onAction="#closeAction" prefWidth="65.0" text="Close" />
+      <VBox layoutX="207.0" layoutY="43.0" prefHeight="200.0" prefWidth="379.0">
+         <children>
+            <GridPane prefHeight="291.0" prefWidth="379.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="165.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="70.0" prefHeight="70.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Name" />
+                  <TextField fx:id="nameTextField" GridPane.columnIndex="1" />
+                  <Label text="Sell Price" GridPane.rowIndex="1" />
+                  <TextField fx:id="sellPriceTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="sellPriceError" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label text="Buy Price" GridPane.rowIndex="2" />
+                  <TextField fx:id="buyPriceTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="buyPriceError" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label text="Barcode" GridPane.rowIndex="3" />
+                  <TextField fx:id="barcodeTextField" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="barcodeError" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextArea fx:id="descriptionTextArea" prefHeight="72.0" prefWidth="183.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="98.0" text="Description" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+            <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="379.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="43.0" prefHeight="320.0" prefWidth="180.0">
+         <children>
+            <TableView fx:id="stockTableView" onMouseClicked="#chosePlaceTableView" prefHeight="195.0" prefWidth="180.0">
+               <columns>
+                  <TableColumn fx:id="stockColumn" prefWidth="180.0" text="Place" />
+               </columns>
+            </TableView>
+            <Label prefHeight="25.0" text="Modify quantity in " />
+            <Label fx:id="choseplaceLabel" prefHeight="25.0" text="Miejsce" />
+            <TextField fx:id="quantityTextField" prefWidth="180.0" />
+            <Label prefHeight="25.0" />
+            <Button fx:id="quantityModyfiBitton" mnemonicParsing="false" onAction="#madyfiQuantytAction" text="Modyfi quantyty" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

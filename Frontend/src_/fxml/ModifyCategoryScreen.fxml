@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyCategoryController">
+   <children>
+      <Button fx:id="cancelButton" layoutX="55.0" layoutY="313.0" mnemonicParsing="false" onAction="#cancelAction" text="Cancel" />
+      <Button fx:id="modifyButton" layoutX="154.0" layoutY="313.0" mnemonicParsing="false" onAction="#modifyAction" text="Modify" />
+      <VBox alignment="TOP_CENTER" layoutX="24.0" layoutY="23.0" prefHeight="272.0" prefWidth="206.0">
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="TOP" nodeOrientation="RIGHT_TO_LEFT" text="Name" VBox.vgrow="NEVER" />
+            <Label />
+            <TextField fx:id="nameTextField" />
+            <Label />
+            <Label text="Description" />
+            <Label />
+            <TextArea fx:id="descriptionTextArea" prefHeight="133.0" prefWidth="149.0" />
+            <Label />
+            <Label fx:id="warningLabel" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </VBox>
+   </children>
+</Pane>

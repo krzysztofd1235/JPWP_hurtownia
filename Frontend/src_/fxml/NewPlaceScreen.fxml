@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewPlaceController">
+   <children>
+      <Button fx:id="createButton" layoutX="155.0" layoutY="282.0" mnemonicParsing="false" onAction="#createAction" prefWidth="55.0" text="Create" />
+      <VBox alignment="CENTER" layoutX="18.0" layoutY="15.0" prefHeight="246.0" prefWidth="214.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="65.0" text="Name" textOverrun="CENTER_ELLIPSIS" />
+            <TextField fx:id="nameTextField" alignment="BOTTOM_CENTER" prefHeight="18.0" prefWidth="149.0" />
+            <Label fx:id="nameError" minHeight="25.0" prefHeight="25.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" minHeight="25.0" prefHeight="25.0" text="Description" />
+            <TextArea fx:id="descriptionTextArea" prefHeight="139.0" prefWidth="149.0" />
+         </children>
+      </VBox>
+      <Button fx:id="closeButton" layoutX="45.0" layoutY="282.0" mnemonicParsing="false" onAction="#closeAction" prefWidth="55.0" text="Close" />
+      <Label layoutY="286.0" prefWidth="45.0" />
+      <Label layoutX="210.0" layoutY="286.0" prefWidth="45.0" />
+   </children>
+</Pane>

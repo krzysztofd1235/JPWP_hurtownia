@@ -1,0 +1,204 @@
+.menu-bar {
+  -fx-background-color: red;
+}
+.root{
+  -fx-background-color:#515151;
+
+}
+
+
+.label{
+    -fx-font-size: 14;
+    -fx-font-family: "Lucida Console";
+	-fx-alignment: center;
+    -fx-text-fill: white;
+    -fx-wrap-text: true;
+
+}
+.labelWeak{
+    -fx-font-size: 14;
+    -fx-font-family: "Lucida Console";
+    -fx-text-fill: white;
+    -fx-background-color: #bfbfbf;
+    -fx-border-width: 1 0 1 0;
+     -fx-border-color: black ;
+
+}
+
+.vbox1{
+   -fx-border-color: black;
+}
+
+
+.table-view {
+      -fx-border-color:  transparent;
+      -fx-background-color: transparent;
+
+}
+
+.table-view .column-header {
+    -fx-background-color:
+            linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+            linear-gradient(#020b02, #3a3a3a),
+            linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+            linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+            linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+        -fx-font-family: "Helvetica";
+        -fx-font-size: 12px;
+        -fx-font-weight: bold;
+        -fx-text-fill: white;
+
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+.table-row-cell: hover {
+    -fx-background-color: #bfbfbf;
+    -fx-text-background-color: 	#c65353;
+}
+.table-row-cell: odd{
+    -fx-background-color: #bfbfbf;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell: even{
+    -fx-background-color: #e6e6e6;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-view{
+-fx-border-color:  #000000;
+}
+.table-row-cell:selected {
+   -fx-background-color: steelblue;
+   -fx-text-fill: red !important;
+}
+.context-menu {
+  -fx-background-color: #bfbfbf;
+
+}
+.menu-item .label {
+  -fx-text-fill: black;
+}
+.menu-item:focused .label {
+  -fx-text-fill: #c65353;
+}
+.tree-view{
+-fx-border-color:  transparent;
+-fx-background-color: transparent;
+}
+
+.tree-cell {
+    -fx-font-weight: bold ;
+    -fx-background-color: #d9d9d9;
+}
+.tree-cell:selected {
+    -fx-font-weight: bold ;
+    -fx-background-color: #bfbfbf;
+    -fx-text-fill: #c65353;
+}
+.button {
+    -fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+
+    -fx-background-radius: 9,8,5,4,3;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+.button Text {
+    -fx-effect: dropshadow( one-pass-box , black , 0, 0.0 , 0 , -1 );
+}
+
+
+
+.text-field{
+    -fx-border-color:  #000000;
+    -fx-background-color: #bfbfbf;
+}
+.combo-box * {
+
+}
+.combo-box .list-cell
+{
+   -fx-text-fill: white;
+   -fx-background-color:
+             linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+             linear-gradient(#020b02, #3a3a3a),
+             linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+             linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+             linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+        -fx-background-radius: 9,8,5,4,3;
+        -fx-font-family: "Helvetica";
+        -fx-font-size: 12px;
+        -fx-font-weight: bold;
+        -fx-text-fill: white;
+
+
+
+
+
+}
+
+.combo-box {
+
+     -fx-background-color:
+             linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+             linear-gradient(#020b02, #3a3a3a),
+             linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+             linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+             linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+
+
+        -fx-background-radius: 9,8,5,4,3;
+        -fx-font-family: "Helvetica";
+        -fx-font-size: 12px;
+        -fx-font-weight: bold;
+        -fx-text-fill: white;
+        -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+
+}
+ .text-area {
+      -fx-border-color:  transparent;
+      -fx-background-color: transparent;
+  }
+  .text-area .content{
+      -fx-background-color: #bfbfbf;
+      -fx-border-color:  #000000;
+  }
+
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color:#d9d9d9;
+
+}
+.tab-pane .tab:selected
+{
+    -fx-background-color:
+            linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+            linear-gradient(#020b02, #3a3a3a),
+            linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+            linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+            linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+
+}
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+}
+
